@@ -1,0 +1,26 @@
+{
+  "name": "pfont",
+  "version": "1.0.0",
+  "description": "Automatic generate web fonts and extract min parts",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server"
+  },
+  "keywords": [
+    "pfont",
+    "p-font",
+    "rowbiy"
+  ],
+  "author": "rowbiy",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "fontmin": "^0.9.7-beta",
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "bower": "^1.8.8",
+    "ejs": "^2.6.1"
+  }
+}

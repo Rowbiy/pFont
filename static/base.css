@@ -1,0 +1,110 @@
+@charset "utf-8";
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-size: 16px;
+}
+html{
+    height: 100%;
+    overflow: hidden;
+    color: #fff;
+}
+body{
+    height: 100%;
+    background: #000 url("bg.jpeg") no-repeat center 30% / 100%;
+}
+.c{
+    position: absolute;
+    left: 50%;
+    top: 36%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 716px;
+    background: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    box-shadow: 10px 0 40px rgba(255,255,255, .5), -10px 0 40px rgba(255,255,255, .5), 0 10px 40px rgba(255,255,255, .5), 0 -10px 40px rgba(255,255,255, .5);
+    color: #555;
+    padding: 30px;
+    font-size: 0;
+}
+.selected-font{
+    display: inline-block;
+    position: relative;
+    width: 160px;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+}
+.selected-font hr{
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    height: 1px;
+    background-color: #ccc;
+    z-index: -1;
+}
+.selected-font > p{
+    display: inline-block;
+    height: 100%;
+    line-height: 60px;
+    text-align: center;
+    background-color: #fff;
+    padding: 0 10px;
+    overflow: hidden;
+    cursor: pointer;
+    user-select: none;
+}
+.selected-font:hover .select-font{
+    display: block!important;
+}
+.select-font{
+    position: absolute;
+    height: 232px;
+    top: 60px;
+    overflow: scroll;
+    background: rgba(0, 0, 0, .65);
+    width: 100%;
+    color: #ccc;
+    box-shadow: 3px 3px 40px #fff;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    display: none;
+}
+.select-font p{
+    height: 38px;
+    line-height: 38px;
+    cursor: pointer;
+    user-select: none;
+}
+.select-font p:hover{
+    color: #fff;
+}
+.show-text{
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-left: 20px;
+    padding: 10px;
+}
+.show-text input{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 450px;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid rgba(66, 66, 66, .2);
+    outline: none;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 38px;
+}
+.tip{
+    position: absolute;
+    top: 450px;
+    color: #eee;
+    left: 0;
+    text-align: center;
+}
